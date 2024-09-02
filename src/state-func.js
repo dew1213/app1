@@ -4,7 +4,7 @@ export default function MessageBox(){
     let [text,setText] = useState("Hello World")
     let [size,setSize] = React.useState(16)
 
-    const onClickText = () => {
+    const onClickSetText = () => {
         let t = prompt("กำหนดข้อความ");
         if (t) {
           setText(t);
@@ -15,7 +15,7 @@ export default function MessageBox(){
         let newSize = size + 1;
         setSize(newSize);
       };
-    let msgboxStyle = {
+    let msgboxSyle = {
         display: "inline-block",
         width: 350,
         fontSize: size,
@@ -25,10 +25,10 @@ export default function MessageBox(){
       };
       return (
         <div style={{ textAlign: "center", marginTop: 20 }}>
-          <div style={msgboxStyle}>{text}</div>
+          <div style={msgboxSyle}>{text}</div>
           <br />
           <br />
-          <button onClick={onClickText}>ข้อมูล</button>&nbsp;
+          <button onClick={onClickSetText}>ข้อมูล</button>&nbsp;
           <button onClick={onClickZoomIn}>เพิ่มขนาด</button>&nbsp;
           <button onClick={() => setSize(size - 1)}>ลดขนาด</button>
         </div>
