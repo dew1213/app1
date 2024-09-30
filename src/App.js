@@ -17,8 +17,9 @@ import FormSelectFile from "./form/form-select-file";
 
 function App() {
   return (
-   
-      <FormSelectFile />
+   <><FormSelectFile />
+   <FormText/></>
+      
   
   );
 }
