@@ -12,11 +12,13 @@ import Content2 from "./context-content2";
 import Router2 from "./route/router2";
 import Router3 from "./route/router3";
 import Home from "./route/home";
+import FormText from "./form/form-text";
+import FormSelectFile from "./form/form-select-file";
 
 function App() {
   return (
    
-      <Router3 />
+      <FormSelectFile />
   
   );
 }
